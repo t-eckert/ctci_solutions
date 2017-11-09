@@ -5,6 +5,7 @@ Personal solutions to Gayle McDowell's "[Cracking the Coding Interview](https://
 01-Arrays and Strings
     q1_Is_Unique.py
     q4_Is_Palindrome.py
+    q4_Is_Palindrome.rb
 
 03-Stacks and Queues
     q3_Stack_of_Plates.py
