@@ -12,6 +12,11 @@ Personal solutions to Gayle McDowell's "[Cracking the Coding Interview](https://
 
 - [q3_Stack_of_Plates.py](https://github.com/t-eckert/ctci_solutions/blob/master/03-Stacks%20and%20Queues/q3_Stack_of_Plates.py)
 
+## 04-Trees and Graphs
+
+- [q1_Is_Balanced.py]()
+- [Tree.py]()
+
 ## 05-Bit Manipulation
 
 - [q1_inset_bits.py](https://github.com/t-eckert/ctci_solutions/blob/master/05-Bit%20Manipulation/q1_inset_bits.py)
