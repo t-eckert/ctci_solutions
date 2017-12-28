@@ -1,9 +1,8 @@
 # Cracking the Coding Interview Solutions
 Personal solutions to Gayle McDowell's "[Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/098478280X)".
 
-```
 01-Arrays and Strings
-    q1_Is_Unique.py
+    [q1_Is_Unique.py](q1_Is_Unique.py)
     q4_Is_Palindrome.py
     q4_Is_Palindrome.rb
 
@@ -22,4 +21,3 @@ Course: 11 Essential Coding Interview Questions
 
 My_Questions
     fizzbuzz.py
-```
