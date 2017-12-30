@@ -27,6 +27,7 @@ Personal solutions to Gayle McDowell's "[Cracking the Coding Interview](https://
 
 ## 08-Recursion and Dynamic Programming
 
+- [q1_Fibonacci](https://github.com/t-eckert/ctci_solutions/blob/master/08-Recursion%20and%20Dynamic%20Programming/q1_Fibonacci.py)
 - [q6_Towers_of_Hanoi.py](https://github.com/t-eckert/ctci_solutions/blob/master/08-Recursion%20and%20Dynamic%20Programming/q6_Towers_of_Hanoi.py)
 - [q6_processing_time.png](https://github.com/t-eckert/ctci_solutions/blob/master/08-Recursion%20and%20Dynamic%20Programming/q6_processing_time.png)
 
@@ -37,3 +38,4 @@ Personal solutions to Gayle McDowell's "[Cracking the Coding Interview](https://
 ## My_Questions
 
 - [fizzbuzz.py](https://github.com/t-eckert/ctci_solutions/blob/master/My_Questions/fizzbuzz.py)
+- [factorial.py](https://github.com/t-eckert/ctci_solutions/blob/master/My_Questions/factorial.py)
