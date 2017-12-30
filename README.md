@@ -14,8 +14,8 @@ Personal solutions to Gayle McDowell's "[Cracking the Coding Interview](https://
 
 ## 04-Trees and Graphs
 
-- [q1_Is_Balanced.py]()
-- [Tree.py]()
+- [Tree.py](https://github.com/t-eckert/ctci_solutions/blob/master/04-Trees%20and%20Graphs/Tree.py)
+- [q1_Is_Balanced.py](https://github.com/t-eckert/ctci_solutions/blob/master/04-Trees%20and%20Graphs/q1_Is_Balanced.py)
 
 ## 05-Bit Manipulation
 
