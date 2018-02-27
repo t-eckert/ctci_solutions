@@ -31,6 +31,13 @@ Personal solutions to Gayle McDowell's "[Cracking the Coding Interview](https://
 - [q6_Towers_of_Hanoi.py](https://github.com/t-eckert/ctci_solutions/blob/master/08-Recursion%20and%20Dynamic%20Programming/q6_Towers_of_Hanoi.py)
 - [q6_processing_time.png](https://github.com/t-eckert/ctci_solutions/blob/master/08-Recursion%20and%20Dynamic%20Programming/q6_processing_time.png)
 
+## 12-C and C++
+
+- [q1_last_lines.cpp](https://github.com/t-eckert/ctci_solutions/blob/master/12-C%20and%20C++/q1_last_lines.cpp)
+- [q1_testFile.txt](https://github.com/t-eckert/ctci_solutions/blob/master/12-C%20and%20C++/q1_testFile.txt)
+- [q2_reverse_string.cpp](https://github.com/t-eckert/ctci_solutions/blob/master/12-C%20and%20C++/q1_reverse_string.cpp)
+_ ...and associated binaries
+
 ## 16-Moderate
 
 - [q19_Pond_Sizes.py](https://github.com/t-eckert/ctci_solutions/blob/master/16-Moderate/q19_Pond_Sizes.py)
