@@ -40,6 +40,7 @@ Personal solutions to Gayle McDowell's "[Cracking the Coding Interview](https://
 
 ## 16-Moderate
 
+- [q14_best_line.py](https://github.com/t-eckert/ctci_solutions/blob/master/16-Moderate/q14_best_line.py)
 - [q19_Pond_Sizes.py](https://github.com/t-eckert/ctci_solutions/blob/master/16-Moderate/q19_Pond_Sizes.py)
 
 ## Course: 11 Essential Coding Interview Questions
