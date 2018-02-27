@@ -15,7 +15,7 @@ Personal solutions to Gayle McDowell's "[Cracking the Coding Interview](https://
 ## 04-Trees and Graphs
 
 - [Tree.py](https://github.com/t-eckert/ctci_solutions/blob/master/04-Trees%20and%20Graphs/Tree.py)
-- [q1_Is_Balanced.py](https://github.com/t-eckert/ctci_solutions/blob/master/04-Trees%20and%20Graphs/q1_Is_Balanced.py)
+- [q4_Is_Balanced.py](https://github.com/t-eckert/ctci_solutions/blob/master/04-Trees%20and%20Graphs/q4_Is_Balanced.py)
 
 ## 05-Bit Manipulation
 
@@ -27,7 +27,7 @@ Personal solutions to Gayle McDowell's "[Cracking the Coding Interview](https://
 
 ## 08-Recursion and Dynamic Programming
 
-- [q1_Fibonacci.py](https://github.com/t-eckert/ctci_solutions/blob/master/08-Recursion%20and%20Dynamic%20Programming/q1_Fibonacci.py)
+- [q0_Fibonacci.py](https://github.com/t-eckert/ctci_solutions/blob/master/08-Recursion%20and%20Dynamic%20Programming/q0_Fibonacci.py)
 - [q6_Towers_of_Hanoi.py](https://github.com/t-eckert/ctci_solutions/blob/master/08-Recursion%20and%20Dynamic%20Programming/q6_Towers_of_Hanoi.py)
 - [q6_processing_time.png](https://github.com/t-eckert/ctci_solutions/blob/master/08-Recursion%20and%20Dynamic%20Programming/q6_processing_time.png)
 
@@ -36,7 +36,7 @@ Personal solutions to Gayle McDowell's "[Cracking the Coding Interview](https://
 - [q1_last_lines.cpp](https://github.com/t-eckert/ctci_solutions/blob/master/12-C%20and%20C++/q1_last_lines.cpp)
 - [q1_testFile.txt](https://github.com/t-eckert/ctci_solutions/blob/master/12-C%20and%20C++/q1_testFile.txt)
 - [q2_reverse_string.cpp](https://github.com/t-eckert/ctci_solutions/blob/master/12-C%20and%20C++/q1_reverse_string.cpp)
-_ ...and associated binaries
+- ...and associated binaries
 
 ## 16-Moderate
 
