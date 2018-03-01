@@ -31,6 +31,10 @@ Personal solutions to Gayle McDowell's "[Cracking the Coding Interview](https://
 - [q6_Towers_of_Hanoi.py](https://github.com/t-eckert/ctci_solutions/blob/master/08-Recursion%20and%20Dynamic%20Programming/q6_Towers_of_Hanoi.py)
 - [q6_processing_time.png](https://github.com/t-eckert/ctci_solutions/blob/master/08-Recursion%20and%20Dynamic%20Programming/q6_processing_time.png)
 
+## 10-Sorting and Searching
+
+- [q1_sorted_merge.py](https://github.com/t-eckert/ctci_solutions/blob/master/10-Sorting%20and%20Searching/q1_sorted_merge.py)
+
 ## 12-C and C++
 
 - [q1_last_lines.cpp](https://github.com/t-eckert/ctci_solutions/blob/master/12-C%20and%20C++/q1_last_lines.cpp)
