@@ -7,6 +7,7 @@ Personal solutions to Gayle McDowell's "[Cracking the Coding Interview](https://
 - [q1_Is_Unique.py](https://github.com/t-eckert/ctci_solutions/blob/master/01-Arrays%20and%20Strings/q1_Is_Unique.py)
 - [q4_Is_Palindrome.py](https://github.com/t-eckert/ctci_solutions/blob/master/01-Arrays%20and%20Strings/q4_Is_Palindrome.py)
 - [q4_Is_Palindrome.rb](https://github.com/t-eckert/ctci_solutions/blob/master/01-Arrays%20and%20Strings/q4_Is_Palindrome.rb)
+- [q5_One_Away.py](https://github.com/t-eckert/ctci_solutions/blob/master/01-Arrays%20and%20Strings/q5_One_Away.py)
 
 ## 03-Stacks and Queues
 
