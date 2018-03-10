@@ -45,6 +45,9 @@ Personal solutions to Gayle McDowell's "[Cracking the Coding Interview](https://
 
 ## 16-Moderate
 
+- [q1_Number_Swapper.py](https://github.com/t-eckert/ctci_solutions/blob/master/16-Moderate/q1_Number_Swapper.py)
+- [q2_testFile.txt](https://github.com/t-eckert/ctci_solutions/blob/master/16-Moderate/q2_testFile.txt)
+- [q2_Word_Frequencies.py](https://github.com/t-eckert/ctci_solutions/blob/master/16-Moderate/q2_Word_Frequencies.py)
 - [q14_best_line.py](https://github.com/t-eckert/ctci_solutions/blob/master/16-Moderate/q14_best_line.py)
 - [q19_Pond_Sizes.py](https://github.com/t-eckert/ctci_solutions/blob/master/16-Moderate/q19_Pond_Sizes.py)
 
