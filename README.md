@@ -51,6 +51,10 @@ Personal solutions to Gayle McDowell's "[Cracking the Coding Interview](https://
 - [q14_best_line.py](https://github.com/t-eckert/ctci_solutions/blob/master/16-Moderate/q14_best_line.py)
 - [q19_Pond_Sizes.py](https://github.com/t-eckert/ctci_solutions/blob/master/16-Moderate/q19_Pond_Sizes.py)
 
+## 17-Hard
+
+- [q21_Volume_of_Histogram.ps](https://github.com/t-eckert/ctci_solutions/blob/master/17-Hard/q21_Volume_of_Histogram.py)
+
 ## Course: 11 Essential Coding Interview Questions
 
 - [Find_Multiples.py](https://github.com/t-eckert/ctci_solutions/blob/master/Course:%2011%20Essential%20Coding%20Interview%20Questions/Find_Multiples.py)
