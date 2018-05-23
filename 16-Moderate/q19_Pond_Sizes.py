@@ -92,6 +92,6 @@ def main():
     land = create_land()
     for row in land:
         print(row)
-    print(lakes_in(land))
+    print("\n"+lakes_in(land))
 
 main()
