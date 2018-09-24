@@ -23,7 +23,7 @@ inputs = {
     4 : [1,1,2,3,5,8]
 }
 
-def check_unique(str_or_list):
+def are_items_unique(str_or_list):
     '''True if no repeated values in string or list. False otherwise.'''
     # Let's try and only traverse the input once to save time. 
     # As we traverse the input, we can check if the value is in a list
