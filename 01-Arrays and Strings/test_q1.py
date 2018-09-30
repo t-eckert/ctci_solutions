@@ -1,6 +1,4 @@
 import unittest
-import sys
-
 import q1_Is_Unique
 
 
