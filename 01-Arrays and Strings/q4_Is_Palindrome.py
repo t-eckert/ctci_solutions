@@ -1,4 +1,4 @@
-'''
+"""
 1.4 Palindrome Permutation: Given as string, write a function to check if it is
     a permutation of a palindrome. The palindrome does not need to be limited
     to just dictionary words. 
@@ -7,18 +7,19 @@
     input = Tact Coa
     output = True 
     There exist permutation of the string 'tactcoa' that are palidromes (i.e. 'tacocat')
-'''
+"""
 
 # Let's begin by thinking of what qualifies a list of values as a palindrome.
 # Each value must have a pair exempting one if the length of the list is odd.
 
+
 def check_palindrome_permute(str_input):
-    '''Checks if a given string or list is a permutation of a palindrome'''
+    """Checks if a given string or list is a permutation of a palindrome"""
     # To have a robust function that can handle spaces and capitalization,
-    # let's strip whitespace from the input and set all letters to 
-    # lower case. I'm going to include punctuation as possible values 
+    # let's strip whitespace from the input and set all letters to
+    # lower case. I'm going to include punctuation as possible values
     # used in the palindrome.
-    str_input = ''.join(str_input.split()).lower() 
+    str_input = "".join(str_input.split()).lower()
     # Create a set of all unique values in the input
     values_in_input = list(set(str_input))
     if len(str_input) % 2 == 0:

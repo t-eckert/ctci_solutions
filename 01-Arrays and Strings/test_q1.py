@@ -34,4 +34,3 @@ class TestIsUnique(unittest.TestCase):
     def test_are_items_unique_single_datastructure_with_True_list(self):
         test_value = [1, 2, 3, 4]
         self.assertTrue(q1_Is_Unique.are_items_unique_single_datastructure(test_value))
-
