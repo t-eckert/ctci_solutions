@@ -13,16 +13,6 @@
   checking both insertion and removal of a character is redundant.
 """
 
-test_strings = [
-    ("ple", "pale"),
-    ("Code", "ode"),
-    ("Thomas", "Thomas"),
-    ("energy", "light"),
-    ("age", "way"),
-    ("key", "eky"),
-    ("hay", "hey"),
-]
-
 
 def check_one_away(s1, s2):
     if s1 == s2:
@@ -36,17 +26,17 @@ def check_one_away(s1, s2):
 
 
 def check_replace(s1, s2):
-    errors = 0
+    diff = 0
     for i in range(len(s1)):
         if s1[i] != s2[i]:
-            errors += 1
-        if errors > 1:
+            diff += 1
+        if diff > 1:
             return False
     return True
 
 
 def check_remove(s1, s2):
-    errors = 0
+    diff = 0
     if len(s1) > len(s2):
         s_longer = s1
         s_shorter = s2
@@ -54,21 +44,9 @@ def check_remove(s1, s2):
         s_longer = s2
         s_shorter = s1
     for i in range(len(s_shorter)):
-        if s_shorter[i] != s_longer[i + errors]:
-            errors += 1
+        if s_shorter[i] != s_longer[i + diff]:
+            diff += 1
             i -= 1
-        if errors > 1:
+        if diff > 1:
             return False
     return True
-
-
-def main():
-    for test_set in test_strings:
-        s1, s2 = test_set
-        print(
-            "%s and %s are one or fewer changes different: %s"
-            % (s1, s2, check_one_away(s1, s2))
-        )
-
-
-main()
