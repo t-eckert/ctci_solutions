@@ -10,10 +10,6 @@
 
 
 class SetOfStacks:
-
-    # We will need the __init__ function to create the structure.
-    # It will take a reference to the structure, self, and to the max height
-    # of each stack, threshold.
     def __init__(self, threshold):
         self.threshold = threshold
         self.stacks = []
@@ -26,7 +22,7 @@ class SetOfStacks:
         self.stacks[-1].append(item)
 
     def pop(self):
-        # Check if the set of stacks is empty. If so, return a message that it is.
+        """Check if the set of stacks is empty. If so, return a message that it is."""
         if len(self.stacks) == 0:
             return "Set of stacks is empty."
         item = self.stacks[-1].pop()
@@ -34,18 +30,9 @@ class SetOfStacks:
             self.stacks.pop()
         return item
 
+    def peek(self):
+        """Return the item at the top of the stack without removing it."""
+        if len(self.stacks) == 0:
+            return "Set of stacks is empty."
+        return self.stacks[-1]
 
-def test_SetOfStacks():
-    threshold = int(input("Set the maximum height for the stack: "))
-    set_of_stacks = SetOfStacks(threshold)
-
-    print("Let's fill up 3 stacks.")
-    for i in range(threshold * 3):
-        set_of_stacks.push(input("Push: "))
-
-    print("Now let's pop the third stack!")
-    for i in range(threshold):
-        print("Pop: %s" % set_of_stacks.pop())
-
-
-test_SetOfStacks()
