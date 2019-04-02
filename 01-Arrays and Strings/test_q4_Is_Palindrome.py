@@ -1,16 +1,37 @@
-import unittest
 import q4_Is_Palindrome
 
 
-class TestIsPalindrome(unittest.TestCase):
-    def test_check_palindrome_permute_with_False_string(self):
-        test_value = "bananagram"
-        self.assertFalse(q4_Is_Palindrome.check_palindrome_permute(test_value))
+def test_check_palindrome_permute_with_False_str():
+    # given
+    test_input = "bananagram"
+    expected_result = False
 
-    def test_check_palindrome_permute_with_True_string(self):
-        test_value = "Tact coa"
-        self.assertTrue(q4_Is_Palindrome.check_palindrome_permute(test_value))
+    # when
+    actual_result = q4_Is_Palindrome.check_palindrome_permute(test_input)
 
-    def test_check_palindrome_permute_with_odd_numbered_False_string(self):
-        test_value = "languid"
-        self.assertFalse(q4_Is_Palindrome.check_palindrome_permute(test_value))
+    # then
+    assert expected_result == actual_result
+
+
+def test_check_palindrome_permute_with_True_str():
+    # given
+    test_input = "Tact coa"
+    expected_result = True
+
+    # when
+    actual_result = q4_Is_Palindrome.check_palindrome_permute(test_input)
+
+    # then
+    assert expected_result == actual_result
+
+
+def test_check_palindrome_permute_with_odd_numbered_False_str():
+    # given
+    test_input = "languid"
+    expected_result = False
+
+    # when
+    actual_result = q4_Is_Palindrome.check_palindrome_permute(test_input)
+
+    # then
+    assert expected_result == actual_result

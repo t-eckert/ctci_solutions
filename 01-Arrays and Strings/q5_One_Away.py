@@ -26,27 +26,22 @@ def check_one_away(s1, s2):
 
 
 def check_replace(s1, s2):
-    diff = 0
-    for i in range(len(s1)):
-        if s1[i] != s2[i]:
-            diff += 1
-        if diff > 1:
-            return False
+    diff_allowed = True
+    for s1_char, s2_char in zip(s1, s2):
+        if s1_char != s2_char:
+            if diff_allowed:
+                diff_allowed = False
+            else:
+                return False
     return True
 
 
 def check_remove(s1, s2):
     diff = 0
-    if len(s1) > len(s2):
-        s_longer = s1
-        s_shorter = s2
-    else:
-        s_longer = s2
-        s_shorter = s1
-    for i in range(len(s_shorter)):
-        if s_shorter[i] != s_longer[i + diff]:
-            diff += 1
-            i -= 1
+    s_shorter, s_longer = (s1, s2) if len(s1) < len(s2) else (s2, s1)
+    for i, char in enumerate(s_longer):
+        diff += 1 if char != s_shorter[i + diff] else 0
         if diff > 1:
             return False
     return True
+

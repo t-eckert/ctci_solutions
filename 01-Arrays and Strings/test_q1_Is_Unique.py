@@ -1,36 +1,98 @@
-import unittest
 import q1_Is_Unique
 
 
-class TestIsUnique(unittest.TestCase):
-    def test_are_items_unique_with_False_string(self):
-        test_value = "bananagram"
-        self.assertFalse(q1_Is_Unique.are_items_unique(test_value))
+def test_are_items_unique_iter_with_unique_str():
+    # given
+    test_input = "yoke"
+    expected_result = True
 
-    def test_are_items_unique_with_True_string(self):
-        test_value = "yoke"
-        self.assertTrue(q1_Is_Unique.are_items_unique(test_value))
+    # when
+    actual_result = q1_Is_Unique.are_items_unique_iter(test_input)
 
-    def test_are_items_unique_with_False_list(self):
-        test_value = [1, 2, 3, 1]
-        self.assertFalse(q1_Is_Unique.are_items_unique(test_value))
+    # then
+    assert expected_result == actual_result
 
-    def test_are_items_unique_with_True_list(self):
-        test_value = [1, 2, 3, 4]
-        self.assertTrue(q1_Is_Unique.are_items_unique(test_value))
 
-    def test_are_items_unique_single_datastructure_with_False_string(self):
-        test_value = "bananagram"
-        self.assertFalse(q1_Is_Unique.are_items_unique_single_datastructure(test_value))
+def test_are_items_unique_iter_with_not_unique_str():
+    # given
+    test_input = "bananagram"
+    expected_result = False
 
-    def test_are_items_unique_single_datastructure_with_True_string(self):
-        test_value = "yoke"
-        self.assertTrue(q1_Is_Unique.are_items_unique_single_datastructure(test_value))
+    # when
+    actual_result = q1_Is_Unique.are_items_unique_iter(test_input)
 
-    def test_are_items_unique_single_datastructure_with_False_list(self):
-        test_value = [1, 2, 3, 1]
-        self.assertFalse(q1_Is_Unique.are_items_unique_single_datastructure(test_value))
+    # then
+    assert expected_result == actual_result
 
-    def test_are_items_unique_single_datastructure_with_True_list(self):
-        test_value = [1, 2, 3, 4]
-        self.assertTrue(q1_Is_Unique.are_items_unique_single_datastructure(test_value))
+
+def test_are_items_unique_iter_with_unique_list():
+    # given
+    test_input = [1, 2, 3, 4]
+    expected_result = True
+
+    # when
+    actual_result = q1_Is_Unique.are_items_unique_iter(test_input)
+
+    # then
+    assert expected_result == actual_result
+
+
+def test_are_items_unique_iter_with_not_unique_list():
+    # given
+    test_input = [1, 2, 3, 1]
+    expected_result = False
+
+    # when
+    actual_result = q1_Is_Unique.are_items_unique_iter(test_input)
+
+    # then
+    assert expected_result == actual_result
+
+
+def test_are_items_unique_set_with_unique_str():
+    # given
+    test_input = "yoke"
+    expected_result = True
+
+    # when
+    actual_result = q1_Is_Unique.are_items_unique_set(test_input)
+
+    # then
+    assert expected_result == actual_result
+
+
+def test_are_items_unique_set_with_not_unique_str():
+    # given
+    test_input = "bananagram"
+    expected_result = False
+
+    # when
+    actual_result = q1_Is_Unique.are_items_unique_set(test_input)
+
+    # then
+    assert expected_result == actual_result
+
+
+def test_are_items_unique_set_with_unique_list():
+    # given
+    test_input = [1, 2, 3, 4]
+    expected_result = True
+
+    # when
+    actual_result = q1_Is_Unique.are_items_unique_set(test_input)
+
+    # then
+    assert expected_result == actual_result
+
+
+def test_are_items_unique_set_with_not_unique_list():
+    # given
+    test_input = [1, 2, 3, 1]
+    expected_result = False
+
+    # when
+    actual_result = q1_Is_Unique.are_items_unique_set(test_input)
+
+    # then
+    assert expected_result == actual_result
+
