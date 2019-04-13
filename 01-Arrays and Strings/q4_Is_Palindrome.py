@@ -13,27 +13,16 @@
 # Each value must have a pair exempting one if the length of the list is odd.
 
 
-def check_palindrome_permute(str_input):
-    """Checks if a given string or list is a permutation of a palindrome"""
-    # To have a robust function that can handle spaces and capitalization,
-    # let's strip whitespace from the input and set all letters to
-    # lower case. I'm going to include punctuation as possible values
-    # used in the palindrome.
-    str_input = "".join(str_input.split()).lower()
-    # Create a set of all unique values in the input
-    values_in_input = list(set(str_input))
-    if len(str_input) % 2 == 0:
-        # If the string has an even number of chars, each needs at least a pair
-        for i in range(len(values_in_input)):
-            if str_input.count(values_in_input[i]) % 2 != 0:
+def check_palindrome_permute(chars):
+    """
+    Checks if a given string or list is a permutation of a palindrome
+    """
+    chars = chars.replace(" ", "").lower()
+    unmatched_char_allowed = len(chars) % 2 != 0
+    for char in chars:
+        if chars.count(char) % 2 != 0:
+            if unmatched_char_allowed:
+                unmatched_char_allowed = False
+            else:
                 return False
-    else:
-        # If the string has an odd number of chars, there can be one value
-        # that doesn't have a pair
-        single = 0
-        for i in range(len(values_in_input)):
-            if single > 1:
-                return False
-            if str_input.count(values_in_input[i]) % 2 != 0:
-                single += 1
     return True

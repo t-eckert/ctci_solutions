@@ -1,4 +1,6 @@
 import math
+import random
+from operator import itemgetter
 
 
 class Point(object):
@@ -59,24 +61,71 @@ class PathFinder:
         return self.is_on_south_edge(point) and self.is_on_east_edge(point)
 
     def get_adjacent_points(self):
+        point = self.current_location
         X = self.current_location.x
         Y = self.current_location.y
 
-        north = [X, Y - 1]
-        south = [X, Y + 1]
-        west = [X - 1, Y]
-        east = [X + 1, Y]
-        northwest = [X - 1, Y - 1]
-        northeast = [X + 1, Y - 1]
-        southwest = [X - 1, Y + 1]
-        southeast = [X + 1, Y + 1]
+        north = Point(X, Y - 1)
+        south = Point(X, Y + 1)
+        west = Point(X - 1, Y)
+        east = Point(X + 1, Y)
+        northwest = Point(X - 1, Y - 1)
+        northeast = Point(X + 1, Y - 1)
+        southwest = Point(X - 1, Y + 1)
+        southeast = Point(X + 1, Y + 1)
 
         if self.is_on_northwest_corner(point):
             return [east, southeast, south]
         elif self.is_on_northeast_corner(point):
             return [west, southwest, south]
+        elif self.is_on_southwest_corner(point):
+            return [east, northeast, north]
+        elif self.is_on_southeast_corner(point):
+            return [west, northwest, north]
+        elif self.is_on_north_edge(point):
+            return [west, southwest, south, southeast, east]
+        elif self.is_on_south_edge(point):
+            return [west, northwest, north, northeast, east]
+        elif self.is_on_west_edge(point):
+            return [north, northeast, east, southeast, south]
+        elif self.is_on_east_edge(point):
+            return [north, northwest, west, southwest, south]
+        else:
+            return [
+                north,
+                northeast,
+                east,
+                southeast,
+                south,
+                southwest,
+                west,
+                northwest,
+            ]
 
-    def calculate_distance(self, point_a, point_b):
-        delta_x = abs(point_a.x - point_b.x)
-        delta_y = abs(point_a.y - point_b.y)
-        return math.sqrt(delta_x ** 2 + delta_y ** 2)
+
+def calculate_distance(point_a, point_b):
+    delta_x = abs(point_a.x - point_b.x)
+    delta_y = abs(point_a.y - point_b.y)
+    return math.sqrt(delta_x ** 2 + delta_y ** 2)
+
+
+def create_terrain(latitude, longitude):
+    return [[random.randint(0, 10) for i in range(latitude)] for j in range(longitude)]
+
+
+def rank_point(point, final_point, mire):
+    distance_to_final = calculate_distance(point, final_point)
+    rank = distance_to_final + mire
+    return [rank, point]
+
+
+def rank_points(points, final_point, terrain):
+    ranked_points: list = []
+    for point in points:
+        mire = terrain[point.x][point.y]
+        ranked_points.append(rank_point(point, final_point, mire))
+    return ranked_points
+
+
+def sort_ranked_points(ranked_points):
+    return sorted(ranked_points, key=itemgetter(0))

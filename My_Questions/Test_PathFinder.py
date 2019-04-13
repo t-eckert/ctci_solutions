@@ -1,5 +1,5 @@
 import unittest
-from PathFinding import PathFinder, Point
+from PathFinding import PathFinder, Point, calculate_distance
 
 test_terrain = [
     [2, 1, 3, 0, 0, 2, 9, 1, 2, 0],
@@ -231,12 +231,7 @@ class Test_PathFinder(unittest.TestCase):
         expected_distance = 7.810249675906654
 
         # act
-        test_path_finder = PathFinder(
-            test_terrain, test_initial_point, test_final_point
-        )
-        actual_distance = test_path_finder.calculate_distance(
-            test_point_a, test_point_b
-        )
+        actual_distance = calculate_distance(test_point_a, test_point_b)
 
         # assert
         self.assertEqual(expected_distance, actual_distance)
