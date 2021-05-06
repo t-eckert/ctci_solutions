@@ -21,10 +21,7 @@ def are_items_unique_iter(items):
     """
     True if input has no repeated values. False otherwise.
     """
-    for item in items:
-        if items.count(item) != 1:
-            return False
-    return True
+    return all(items.count(item) == 1 for item in items)
 
 
 """
