@@ -9,6 +9,8 @@ we can be clever and write a function that will determine the "uniqueness" of
 a string or a list depending on what is input. 
 """
 
+from typing import Iterable
+
 """
 If we're going to write check_unique without any additional data
 structures we can use the count() method in Python. We iterate
@@ -17,20 +19,32 @@ of that value in the array.
 """
 
 
-def are_items_unique_iter(items):
+def are_items_unique_iter(items: Iterable) -> bool:
+    """True if input has no repeated values. False otherwise.
+
+    Args:
+        items (Iterable):       iterable items whose uniqueness will be checked
+
+    Returns:
+        bool:                   whether the items in the iterable are unique
     """
-    True if input has no repeated values. False otherwise.
-    """
+
     return all(items.count(item) == 1 for item in items)
 
 
 """
-We can also use Python's set function.
+We can alternatively use Python's set function.
 """
 
 
-def are_items_unique_set(items):
+def are_items_unique_set(items: Iterable) -> bool:
+    """True if input has no repeated values. False otherwise.
+
+    Args:
+        items (Iterable):       iterable items whose uniqueness will be checked
+
+    Returns:
+        bool:                   whether the items in the iterable are unique
     """
-    True if input has no repeated values. False otherwise.
-    """
+
     return len(items) == len(set(items))

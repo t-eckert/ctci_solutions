@@ -6,23 +6,25 @@
     EXAMPLE:
     input = Tact Coa
     output = True 
-    There exist permutation of the string 'tactcoa' that are palidromes (i.e. 'tacocat')
+    There exist permutations of the string 'tactcoa' that are palidromes (i.e. 'tacocat')
 """
 
 # Let's begin by thinking of what qualifies a list of values as a palindrome.
 # Each value must have a pair exempting one if the length of the list is odd.
 
 
-def check_palindrome_permute(chars):
-    """
-    Checks if a given string or list is a permutation of a palindrome
-    """
-    chars = chars.replace(" ", "").lower()
-    unmatched_char_allowed = len(chars) % 2 != 0
-    for char in chars:
-        if chars.count(char) % 2 != 0:
+def check_palindrome_permute(characters: str) -> bool:
+    """Checks if a given string or list is a permutation of a palindrome"""
+
+    characters = characters.replace(" ", "").lower()
+    unique_characters = {characters}
+    unmatched_char_allowed = len(characters) % 2 != 0
+
+    for character in characters:
+        if characters.count(character) % 2 != 0:
             if unmatched_char_allowed:
                 unmatched_char_allowed = False
             else:
                 return False
+
     return True
